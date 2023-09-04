@@ -13,6 +13,9 @@
     padding: 0;
     color: #888;
 }
+body {
+    min-width: 340px;
+}
 .flex {
     display: flex;
     justify-content: space-between;
@@ -33,7 +36,7 @@
 #head .bottom {
     position: fixed;
     width: 100%;
-    height: 15px;
+    height: 20px;
     top: 49px;
     background-color: #FFF;
     border-bottom: 1px double #FFDDCC;
@@ -41,7 +44,7 @@
 #head .nav-bar .tree {
     position: absolute;
     width: 20px;
-    height: 95px;
+    height: 100px;
     background-color: #FFF;
     border-radius: 0;
     transform: rotate(45deg);
@@ -68,12 +71,12 @@
     list-style: none;
 }
 #head .nav-bar li {
-    font-size: max(1.5vw);
+    font-size: max(1.8vw);
     float: left;
     padding: 15px;
 }
 #head .nav-bar a.welcome {
-    font-size: max(1.5vw);
+    font-size: max(1.8vw);
     text-decoration: none;
     padding: 15px;
 }
@@ -85,12 +88,12 @@
  #welcome h1 {
     margin-top: max(7rem);
     color: #FFCCCC;
-    font-size: min(6vw);
+    font-size: min(7vw);
     text-align: center;
 }
 #welcome p {
     color: #FFCCEE;
-    font-size: min(3vw);
+    font-size: min(4vw);
     text-align: center;
 }
 /* ABOUT */
@@ -195,13 +198,11 @@
 #about .grid.experiences p,
 #about .grid.computer li {
     margin: 8px 0 8px 20px;
-    font-size: 14px;
 }
 #about .grid.formations h1, #about .grid.experiences h1 {
     margin-top: 10px;
 }
 #about .grid.formations li span, #about .grid.experiences span {
-    font-size: 14px;
     font-weight: bold;
 }
 #about .grid.formations p, #about .grid.experiences p {
@@ -219,7 +220,7 @@
 #projects h1 {
     margin: max(3.5rem) auto max(5rem) auto;
     color: #FFCCCC;
-    font-size: min(6vw);
+    font-size: min(7vw);
     text-align: center;
 }
 #projects .grid {
@@ -305,7 +306,7 @@
 }
 #projects .grid .number {
     margin-right: 15px;
-    width: max(1.7vw);
+    width: 20px;
     height: auto;
     border: none;
     color: #EEE;
@@ -344,13 +345,13 @@
 #contact h1 {
     margin: max(3.5rem) auto max(5rem) auto;
     color: #FFCCCC;
-    font-size: min(6vw);
+    font-size: min(7vw);
     text-align: center;
 }
 #contact .fond {
     margin: 0 auto 10px auto;
     padding: 50px;
-    width: 60%;
+    width: 70%;
     height: auto;
     background-color: #AAA;
     opacity: 0.2;
@@ -359,21 +360,16 @@
 }
 #contact p {
     margin: 10px;
-    font-size: max(3vw);
+    font-size: max(3.5vw);
     text-align: center;
     color: #000;
 }
-@media (max-width: 420px) {
+
+@media (max-width: 720px) {
     /* HEAD */
-    #head .nav-bar .animation {
-        visibility: hidden;
+    #head .nav-bar {
+        flex-direction: column;
     }
-    /* ABOUT */
-    #about .grid .flex img.svg {
-        width: min(2.8vw);
-    }
-}
-@media (max-width: 700px) {
     /* PROJECT */
     #projects .grid {
         display: flex;
@@ -382,39 +378,22 @@
     }
 }
 @media (max-width: 940px) {
-    * {
-        font-size: max(1.7vw);
-    }
-    h1 {
-        font-size: max(1.7vw);
-    }
-    #head .nav-bar a.welcome {
-        font-size: max(1.7vw);
-    }
-    span, a, #about .grid.experiences p, #about .grid.experiences span {
-        font-size: max(1.7vw);
-    }
     /* HEAD */
     #head .nav-bar .animation,  #head .bottom  {
         visibility: hidden;
     }
-    /* ABOUT */
-    #about .grid .flex img.svg {
-        width: min(2.8vw);
+    #head .nav-bar li {
+        font-size: 14px;
     }
-    /* SKILLS FORMATIONS AND DIPLOMA */
-    #about .grid.skills ul li, 
-    #about .grid.computer ul li, 
-    #about .grid.formations ul li span, 
-    #about .grid.formations ul li p {
-        font-size: max(1.5vw);
+    #head .nav-bar a.welcome {
+        font-size: 14px;
     }
     /* PROJECTS */
      #projects .grid {
         grid-template-columns: 1fr;
     }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
     /* HEAD */
     #head .nav-bar .tree {
         transform: rotate(0deg);
@@ -441,9 +420,6 @@
     /* PROJECTS */
     #projects .grid {
         grid-template-columns: 1fr 1fr;
-    }
-    #projects p {
-        font-size: 10px;
     }
 }
 @media (min-width: 1920px) {
