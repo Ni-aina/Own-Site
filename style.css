@@ -68,10 +68,12 @@
     list-style: none;
 }
 #head .nav-bar li {
+    font-size: max(1.5vw);
     float: left;
     padding: 15px;
 }
 #head .nav-bar a.welcome {
+    font-size: max(1.5vw);
     text-decoration: none;
     padding: 15px;
 }
@@ -211,7 +213,7 @@
     text-decoration: none;
 }
 #projects p {
-    font-size: max(0.9vw);
+    font-size: 12px;
     margin: 5px 10px;
 }
 #projects h1 {
@@ -278,7 +280,7 @@
 #projects .grid .trees {
     display: flex;
     justify-content: center;
-    height: 60px;
+    height: 70px;
     border: none;
     margin: 15px 0;
 }
@@ -296,15 +298,15 @@
 }
 #projects .grid .numbers {
     width: 100%;
-    height: 20px;
+    height: auto;
     display: flex;
     justify-content: center;
     border: none;
 }
 #projects .grid .number {
     margin-right: 15px;
-    width: 14px;
-    height: 14px;
+    width: max(1.7vw);
+    height: auto;
     border: none;
     color: #EEE;
     padding: 3px;
@@ -439,5 +441,20 @@
     /* PROJECTS */
     #projects .grid {
         grid-template-columns: 1fr 1fr;
+    }
+    #projects p {
+        font-size: 10px;
+    }
+}
+@media (min-width: 1920px) {
+    #head .nav-bar {
+        height: 5rem;
+    }
+    #head .bottom {
+        height: 20px;
+        top: 69px;
+    }
+    #head .nav-bar .tree {
+        height: 130px;
     }
 }
