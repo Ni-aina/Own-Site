@@ -230,9 +230,11 @@ body {
     overflow: hidden;
     gap: 20px;
 }
-#projects .grid div {
+#projects .grid div.game-of-point, 
+#projects .grid div.nim-game, 
+#projects .grid div.tic-tac-toe  {
     width: 310px;
-    height: 210px;
+    min-height: 215px;
     border-radius: 5px;
     border: 10px double #FFEECC;
 }
@@ -256,17 +258,17 @@ body {
 #projects .grid .cols {
     display: flex;
     border: none;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 #projects .grid .col {
     width: 30px;
-    height: 75%;
+    height: 160px;
     border: none;
     border-radius: 0;
     border-right: 1px solid #AAA;
 }
 #projects .grid .points {
-    margin: -146px 0 0 59px;
+    margin: -92px 0 0 59px;
     display: flex;
     border: none;
 }
@@ -319,13 +321,13 @@ body {
 }
 #projects .grid table {
     border-collapse: collapse;
-    margin: 15px auto;
+    margin: 30px auto;
     text-align: center;
-    width: 70%;
-    height: 70%;
+    width: 120px;
+    height: 120px;
 }
 #projects .grid td {
-    font-size: max(2vw);
+    font-size: 1.5rem;
     border: 1px solid #AAA;
 }
 #projects .grid td:first-of-type {
