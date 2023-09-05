@@ -71,12 +71,12 @@ body {
     list-style: none;
 }
 #head .nav-bar li {
-    font-size: max(1.8vw);
+    font-size: max(1.5vw);
     float: left;
     padding: 15px;
 }
 #head .nav-bar a.welcome {
-    font-size: max(1.8vw);
+    font-size: max(1.5vw);
     text-decoration: none;
     padding: 15px;
 }
